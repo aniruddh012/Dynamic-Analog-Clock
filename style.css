@@ -1,0 +1,105 @@
+body {
+    background-color: wheat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 70vw;
+    height: 85vh;
+    margin-top: 5vh;
+    background-color: rgb(255, 255, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 8px black,
+        -1px -1px 4px black;
+}
+.analog{
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+.hour,.minute, .second{
+    display:flex;
+    position: absolute;
+    width: 0.8vw;
+    border-radius: 25px;
+    transform-origin: bottom;
+    background-color: black;
+    left: 49.5vw;
+}
+.hour{
+    width: 0.7vw;
+    top: 24.5vh;
+    height: 20vh;
+}
+.minute{
+    width: 0.6vw;
+    top: 20.4vh;
+    height: 24vh;
+}
+.second{
+    width: 0.3vw;
+    top: 17.4vh;
+    height: 27vh;
+}
+span {
+    padding: 2vh;
+    font-size: 5vh;
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: palevioletred;
+    box-shadow: 2px 2px 4px black;
+}
+
+span:hover {
+    background-color: springgreen;
+}
+
+.date {
+    margin-left: 1vw;
+}
+@media only screen and (max-width:1024px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+    }
+    .analog{
+        margin-top: 0vh;
+    }
+    .image{
+        width: 264px;
+        height: 264px;
+    }
+    .dynamic{
+        display: flex;
+        flex-direction: column;
+    }
+    .date{
+        margin-left: 0vw;
+        margin-top: 3vh;
+    }
+    .hour, .minute, .second{
+        width: 2vw;
+        left: 49.5vw;
+    }
+    .hour{
+        top: 28.5vh;
+        height: 14vh;
+    }
+    .minute{
+        width: 1.5vw;
+        top: 26.4vh;
+        height: 16vh;
+    }
+    .second{
+        width: 0.8vw;
+        top: 24.9vh;
+        height: 18vh;
+    }
+}
